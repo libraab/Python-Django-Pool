@@ -22,10 +22,8 @@ def your_function():
         'Frusciante': '1970',
         'Thompson' : '1949',
         'Burton' : '1939',
-        }
-        
+        }       
     y = sorted(d.items(), key=lambda x: x[1])
-
     new = {}
     for h, g in y:
         new.setdefault(g, []).append(h)
@@ -34,7 +32,6 @@ def your_function():
         b = sorted(b)
         for c in b:
             print('%s ' % (c), end='')
-        print()
-        
+        print()        
 if __name__ == '__main__':
     your_function()
