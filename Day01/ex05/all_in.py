@@ -2,7 +2,7 @@
 
 import sys
 def us(str):
-    if (str.isspace()):
+    if (str.isspace() or len(str) == 0):
         return
     print (str.strip() + " is neither a capital city nor a state")
 
@@ -25,7 +25,7 @@ def is_state(states, capital_cities, i):
     return(0)
 
 def your_function():
-    if ((len(sys.argv) != 2) or (sys.argv[1].find(",,") != -1)):
+    if (len(sys.argv) != 2):
         return
     states = {
         "Oregon" : "OR",
