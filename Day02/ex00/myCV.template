@@ -1,0 +1,11 @@
+{doctype}
+{Open_html}
+{Open_head}
+	<title>{title}</title>
+{Close_head}
+{Open_body}
+	<h1>{name} {surname}'s CV </h1>
+	<p>Age : {age}</p>
+	<p>Job : {profession}</p>
+{Close_body}
+{Close_html}
